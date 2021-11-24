@@ -1,0 +1,49 @@
+
+body{
+    position: relative;
+    background-color: black;
+    height: 100%; /* 100 would show scroll bars**/
+    margin: 0 auto;
+}
+
+.space{
+    position: relative;
+    background-image: url("Files/space.png");
+    border-radius: 10px;
+    width: 100vh;
+    height: 92vh;
+    text-align: center;
+    margin: auto; /*works only if width is set**/
+}
+
+.planet-area{
+    position: absolute; /*parent must be relative**/
+    background-color: blue;
+    border-radius: 10px;
+    width: 500px;
+    height: 700px;
+    bottom: 0;
+
+}
+
+.planet{
+    position: absolute;
+    background-color: white;
+    background-position: bottom left;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    bottom: 0;
+    margin: 3px;
+}
+
+.rocket{
+    position: absolute;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    right: -30px;
+    top: 20%;
+    transform: rotate(15deg);
+}
